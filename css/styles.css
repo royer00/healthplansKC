@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
 :root {
-
+  --red-highlight: #B73225;
+  --blue-minded: #004E7C;
+  --maroon-6: #591C0B;
+  --grey-water: #5C5F58;
+  --lighter-grey: #DCE1E3;
   --main-font: 'Source Sans Pro', sans-serif;
+
+
 }
 
 
@@ -19,4 +25,54 @@ Border Box
 html {
   box-sizing: border-box;
   font-family: var(--main-font);
+}
+
+body {
+  background-color: var(--lighter-grey);
+}
+
+/*HEADER*/
+.hero {
+  height: 50vh;
+  background-image: linear-gradient(to right bottom, var(--blue-minded), rgba(226, 240, 249, .794)), url("../images/national-cancer-institute-bM4MXYPY61U-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.hero ul {
+  list-style: none;
+  font-size: 2rem;
+}
+
+.hero a {
+  margin: 1.5rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+
+
+header {
+  /* background-color: var(--grey-water); */
+  color: white;
+}
+
+header a {
+  color: var(--grey-water);
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: var(--blue-minded);
+  color: white;
+  border-radius: 20px;
+  padding: .5rem;
 }
